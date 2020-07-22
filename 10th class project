@@ -1,0 +1,405 @@
+/* This Program is made by Vansh
+ * This program is About Knowledge of Mind
+ * There are three options to test your different abilities.
+ * So review your current view. */
+import java.io.*;
+class Knowledge_Game
+{
+    public static void main(String[] args)throws IOException
+    {
+
+        int ans[] = new int[11];
+        String Ans[] = new String[7];
+        String Answer[] = new String[7];
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        int no = 0,num = 0,no2 = 0,st = 0;//Variable Description
+        System.out.println("W E L C O M E");
+        //do while starts here
+        do
+        {
+            try
+            {
+                //Menu Starts here
+                System.out.println();
+                System.out.println("\t\t\t ..... To The Main Menu");
+                System.out.println("\n");
+                System.out.println("Enter No.1 for Playing Quiz to know some Amazing Facts");
+                System.out.println("Enter No.2 for Experiencing some Magic Tricks");
+                System.out.println("Enter No.3 for Refreshing Your Mind with Some Brain Teasers");
+                System.out.println("Enter Your Choice(1,2,3)");
+                int c = Integer.parseInt(in.readLine());
+                //Switch case Starts here
+                switch(c)
+                {
+                    case 1:
+                    System.out.println("\t\t\tWelcome To The Quiz World");
+                    System.out.println();//to leave space of one line
+                    System.out.println();//to leave space of one line
+                    System.out.println("There are Total 10 Questions");
+                    System.out.println("With Every Correct Answer,You will Come to Know Something Amazing ");
+                    System.out.println("So Lets Begin!!!");
+                    if(no == 0)
+                    {
+                        System.out.println("Q1. Cube Root of 216 ?" );
+                        ans[1] = Integer.parseInt(in.readLine());
+                        if(ans[1]==6)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("Ants Never Sleep!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 6");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 1)
+                    {
+                        System.out.println("Q2.Total Sides in a Heptagon And Pentagon" );
+                        ans[2] = Integer.parseInt(in.readLine());
+                        if(ans[2] ==12)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("When The Moon is Directly Overhead,You Will Weight Slightly Less!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 12");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 2)
+                    {
+                        System.out.println("Q3. The MS Windows Computer Operating System Version that Succeded Vista" );
+                        ans[3] = Integer.parseInt(in.readLine());
+                        if(ans[3]==7)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("An Ostrich's Eye is Bigger Than its Brain!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 7");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 3)
+                    {
+                        System.out.println("Q4. The First Apollo Moon Landing " );
+                        ans[4] = Integer.parseInt(in.readLine());
+                        if(ans[4]==11)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("The shortest war in History was Between Zanzibar and England in 1896.");
+                            System.out.println("Zanzibar Surrendered after 38 Minutes!!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 11");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 4)
+                    {
+                        System.out.println("Q5. Holes in a Standard Round of Golf" );
+                        ans[5] = Integer.parseInt(in.readLine());
+                        if(ans[5]==18)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("You Can not Kill Yourself By Holding your Breath!!!!!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 18");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 5)
+                    {
+                        System.out.println("Q6. Total Dots on a Dice" );
+                        ans[6] = Integer.parseInt(in.readLine());
+                        if(ans[6]==21)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("Bruce Lee was so fast that they Actually had to slow Film Down. ");
+                            System.out.println("So You could see his Moves!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 21");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 6)
+                    {
+                        System.out.println("Q7. Whole Miles in a Marathon Running Events?" );
+                        ans[7] = Integer.parseInt(in.readLine());
+                        if(ans[7]==26)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("In England,the Speaker of the House is not Allowed To Speak!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 26");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 7)
+                    {
+                        System.out.println("Q8. Traditionally (UK,US)the Years of a pearl Wedding Anniversary" );
+                        ans[8]= Integer.parseInt(in.readLine());
+                        if(ans[8]==30)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("Honey is the only Food that Does not spoil!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 30");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 8)
+                    {
+                        System.out.println("Q9. What is the largest number of binary system?" );
+                        ans[9] = Integer.parseInt(in.readLine());
+                        if(ans[9]==1)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("Moths are unable to fly during an earthquake!!!");
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 1 ");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    if(no == 9)
+                    {
+                        System.out.println("Q10.Cricket is the National Game of how many Countries " );
+                        ans[10] = Integer.parseInt(in.readLine());
+                        if(ans[10]==2)
+                        {
+                            System.out.println("Your Answer is correct");
+                            System.out.println("Our Hairs and Fingernails grow even after our Death!!");
+                            System.out.println();//Moving Cursor to next Line
+                            no++;//incrementing
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Incorrect");
+                            System.out.println("Correct Answer is 2");
+                            System.out.println();//Moving Cursor to next Line
+                        }//else ends
+                    }//Outer if ends
+                    System.out.println("\n");//Moving Cursor to next Line
+                    System.out.println("\t\t\t\tREPORT");
+                    System.out.println("You were able to play "+no+" out of 10 Questions");
+                    if(no<=3)
+                        System.out.println("Low Score,Needs Improvement ");
+                    else if(no>3 && no<=6)
+                        System.out.println("Average Score,Still Needs Improvement ");
+                    else if(no>6 && no<=9)
+                        System.out.println("Good Score,Keep it Up ");
+                    else if(no>9)
+                        System.out.println("Excellent ");
+                    break;
+                    case 2:
+                    System.out.println("\t\tWelcome to the Three Numbers Trick");
+                    for(long i = 1;i<=1000000000;i++)
+                    {
+                        if(i==100000000)
+                            System.out.println("Think a number....");
+                        else if(i==200000000)
+                            System.out.println("Do its Twice....");
+                        else if(i==300000000)
+                            System.out.println("Add 5 to it....");
+                        else if(i==400000000)
+                            System.out.println("Now Multiply by 5....");
+                        else if(i==500000000)
+                            System.out.println("Remember the Total....");
+                        else if(i==600000000)
+                            System.out.println("Think another one(1) digit number....");
+                        else if(i==700000000)
+                            System.out.println("Add Previous total to it and Multiply by 10....");
+                        else if(i==800000000)
+                            System.out.println("Think another one(1) digit Number and Previous total to it....");
+                        else if(i==900000000)
+                            System.out.println("Now Finally Subtract 250 from it....");
+                        else if(i==1000000000)
+                            System.out.println("Now Enter Your answer....");
+                    }//for loop ends
+                    int num1 = Integer.parseInt(in.readLine());
+                    int a = num1%10;
+                    int b = (num1/10)%10;
+                    int d = num1/100;
+                    System.out.println("First No. Thought by You is "+d);
+                    System.out.println("Second No. Thought by You is"+b);
+                    System.out.println("Third No. Thought by You is"+a);
+
+                    break;
+                    case 3:
+                    System.out.println("\t\t\tWelcome to world of Brain Teasers");
+                    System.out.println("Here are 6 of Them To Refresh Your Mind");
+                    System.out.println("Lets see if you can answer them");
+                    System.out.println("Answer them in one Word");
+                    if(no2==0)
+                    {
+                        System.out.println("1) Johny's Mother has Three Children");
+                        System.out.println("First - April");
+                        System.out.println("Second - May");
+                        System.out.println("Tell the name of Third Child");
+                        Ans[1] = in.readLine();
+                        Answer[1] = "Johny";
+                        if(Ans[1].equalsIgnoreCase(Answer[1]))
+                        {
+                            System.out.println("Your Answer is Correct");
+                            num++;//incrementing
+                            System.out.println();//Moving Cursor to next Line
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Wrong");
+                            System.out.println("Correct answer is "+Answer[1]);
+                        }//else ends
+                    }//Outer if ends
+                    if(no2==0)
+                    {
+                        System.out.println("2) Before Mt. Everest was discovered,What was Highest Mountain");
+                        Ans[2] = in.readLine();
+                        Answer[2]= "Mt.Everest";
+                        if(Ans[2].equalsIgnoreCase(Answer[2]))
+                        {
+                            System.out.println("Your Answer is Correct");
+                            num++;//incrementing
+                            System.out.println();//Moving Cursor to next Line
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Wrong");
+                            System.out.println("Correct answer is "+Answer[2]);
+                        }//else ends
+                    }//Outer if ends
+                    if(no2==0)
+                    {
+                        System.out.println("3) If You are Running a Race and You Passed The Person in Second Place");
+                        System.out.println("What Place You Would be in now?");
+                        Ans[3] = in.readLine();
+                        Answer[3] = "Second";
+                        if(Ans[3].equalsIgnoreCase(Answer[3]))
+                        {
+                            System.out.println("Your Answer is Correct");
+                            num++;//incrementing
+                            System.out.println();//Moving Cursor to next Line
+                        }//inner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Wrong");
+                            System.out.println("Correct answer is "+Answer[3]);
+                        }//else ends
+                    }//Outer if ends
+                    if(no2==0)
+                    {
+                        System.out.println("4) What Five Letter Word will Become Shorter When You add 2 letters to it?");
+                        Ans[4] = in.readLine();
+                        Answer[4] = "Short";
+                        if(Ans[4].equalsIgnoreCase(Answer[4]))
+                        {
+                            System.out.println("Your Answer is Correct");
+                            num++;//incrementing
+                            System.out.println();//Moving Cursor to next Line
+                        }//iner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Wrong");
+                            System.out.println("Correct answer is "+Answer[4]);
+                        }//else ends
+                    }//Outer if ends
+                    if(no2==0)
+                    {
+                        System.out.println("5) Imagine You are in a Room Without Windows and Door ");
+                        System.out.println("How will you get out");
+                        Ans[5] = in.readLine();
+                        Answer[5] = "Stop Imagining";
+                        if(Ans[5].equalsIgnoreCase(Answer[5]))
+                        {
+                            System.out.println("Your Answer is Correct");
+                            num++;//incrementing
+                            System.out.println();//Moving Cursor to next Line
+                        }//iner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Wrong");
+                            System.out.println("Correct answer is "+Answer[5]);
+                        }//else inds
+                    }//Outer if ends
+                    if(no2==0)
+                    {
+                        System.out.println("6) A clerk at a Butcher Shop stands 5 feet,10 Inches tall");
+                        System.out.println("He Wears size 10 Sneakers");
+                        System.out.println("What does he Weight");
+                        Ans[6] = in.readLine();
+                        Answer[6] = "meat";
+                        if(Ans[6].equalsIgnoreCase(Answer[6]))
+                        {
+                            System.out.println("Your Answer is Correct");
+                            num++;//incrementing
+                            System.out.println();//Moving Cursor to next Line
+                        }//iner if ends
+                        else
+                        {
+                            System.out.println("Your Answer is Wrong");
+                            System.out.println("Correct answer is "+Answer[6]);
+                        }//else ends
+                    }//Outer if ends
+                    System.out.println("You Got "+num+" Correct out of 6");
+                    if(num<=2)
+                        System.out.println("Low Score,Needs Improvement ");
+                    else if(num==3)
+                        System.out.println("Average Score,Still Needs Improvement ");
+                    else if(num>3 && num<=5)
+                        System.out.println("Good Score,Keep it Up ");
+                    else if(num==6)
+                        System.out.println("Excellent ");
+                    break;
+                    default:
+                    System.out.println("Oop's Wrong Choice");
+                }//Switch ends
+                no = 0;
+                System.out.println();//Moving Cursor to next Line
+                System.out.println();//Moving Cursor to next Line
+                System.out.println("Do You Wish to Continue??");
+                System.out.println("To Continue Press '0'");
+                System.out.println("To Exit Press any other Number");
+                st = Integer.parseInt(in.readLine());
+            }//Try block ends
+            catch(NumberFormatException ex)
+            {
+                System.out.println("Incorrect Input,please Start up Again!!");
+            }//Catch block ends
+        }while(st==0);//while ends
+        System.out.println("Thank You");
+        System.out.println("You Have Quit the Program");
+        System.out.println("Have a Nice Day!!!!");
+  
+  }//Main Function()ends
+}//class ends
