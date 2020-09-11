@@ -3,9 +3,10 @@
  * There are three options to test your different abilities.
  * So review your current view. */
 import java.io.*;
+import java.util.concurrent.TimeUnit;
 class Knowledge_Game
 {
-    public static void main(String[] args)throws IOException
+    public static void main(String[] args)throws Exception
     {
 
         int ans[] = new int[11];
@@ -14,6 +15,7 @@ class Knowledge_Game
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int no = 0,num = 0,no2 = 0,st = 0;//Variable Description
         System.out.println("W E L C O M E");
+        TimeUnit.SECONDS.sleep(2);
         //do while starts here
         do
         {
